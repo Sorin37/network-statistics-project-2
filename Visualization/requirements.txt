@@ -1,0 +1,7 @@
+networkx
+plotly
+dash
+pandas
+numpy
+
+
