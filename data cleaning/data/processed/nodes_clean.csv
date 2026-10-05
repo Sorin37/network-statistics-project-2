@@ -1,0 +1,236 @@
+id,original_label,TSN,name,phylum,is_human
+0,1,10824,Pilayella littoralis,Phaeophyta,False
+1,2,11217,Laminaria,Phaeophyta,False
+2,3,11246,Agarum,Phaeophyta,False
+3,4,11250,Costaria costata,Phaeophyta,False
+4,5,11255,Saccharina sessile,Phaeophyta,False
+5,6,11277,Nereocystis luetkeana,Phaeophyta,False
+6,7,11289,Alaria,Phaeophyta,False
+7,8,11314,Desmarestia,Phaeophyta,False
+8,9,113265,Staphylinidae,Arthropoda,False
+9,10,11334,Fucus,Phaeophyta,False
+10,11,11365,Cystoseira,Phaeophyta,False
+11,12,11424,Colpomenia,Phaeophyta,False
+12,13,11531,Bangia,Rhodophyta,False
+13,14,11540,Porphyra,Rhodophyta,False
+14,15,12322,Corallina,Rhodophyta,False
+15,16,12441,Bossiella,Rhodophyta,False
+16,17,12841,Palmaria,Rhodophyta,False
+17,18,13080,Microcladia,Rhodophyta,False
+18,19,13440,Polysiphonia,Rhodophyta,False
+19,20,13583,Odonthalia,Rhodophyta,False
+20,21,14035,Caloplaca,Ascomycota,False
+21,22,14050,Verrucaria,Ascomycota,False
+22,23,1447,Chrysophyta,Chrysophyta,False
+23,24,154883,Phascolosomatidae,Sipuncula,False
+24,25,155456,Phoronida,Phoronida,False
+25,26,155471,Gymnolaemata,Ectoprocta,False
+26,27,156829,Terebratalia transversa,Brachiopoda,False
+27,28,157075,Solaster dawsoni,Echinodermata,False
+28,29,157076,Solaster endeca,Echinodermata,False
+29,30,157078,Solaster stimpsoni,Echinodermata,False
+30,31,157139,Dermasterias imbricata,Echinodermata,False
+31,32,157152,Henricia,Echinodermata,False
+32,33,157224,Evasterias troschelii,Echinodermata,False
+33,34,157225,Leptasterias,Echinodermata,False
+34,35,157270,Orthasterias koehleri,Echinodermata,False
+35,36,157274,Pycnopodia helianthoides,Echinodermata,False
+36,37,157325,Ophiuroidea,Echinodermata,False
+37,38,157969,Strongylocentrotus droebachiensis,Echinodermata,False
+38,39,158187,Eupentacta,Echinodermata,False
+39,40,158191,Cucumaria,Echinodermata,False
+40,41,158423,Apodacea,Echinodermata,False
+41,42,159300,Styela,Chordata,False
+42,43,159446,Pyura,Chordata,False
+43,44,162030,Hypomesus pretiosus,Chordata,False
+44,45,164457,Gobiesocidae,Chordata,False
+45,46,166365,Gasterosteus aculeatus,Chordata,False
+46,47,167211,Artedius,Chordata,False
+47,48,167222,Clinocottus,Chordata,False
+48,49,167279,Hemilepidotus hemilepidotus,Chordata,False
+49,50,167333,Oligocottus maculosus,Chordata,False
+50,51,170919,Trichodon trichodon,Chordata,False
+51,52,171564,Anoplarchus purpurescens,Chordata,False
+52,53,171598,Xiphister atropurpureus,Chordata,False
+53,54,171599,Xiphister mucosus,Chordata,False
+54,55,171637,Pholis,Chordata,False
+55,56,171672,Ammodytes hexapterus,Chordata,False
+56,57,180092,Homo sapiens,Chordata,True
+57,58,180547,Enhydra lutris,Chordata,False
+58,59,180603,Vulpes,Chordata,False
+59,60,180625,Eumetopias jubatus,Chordata,False
+60,61,180649,Phoca vitulina,Chordata,False
+61,62,202421,Bacteria,Bacteria,False
+62,63,2135,Prymnesiophyceae,Haptophyta,False
+63,64,2286,Bacillariophyta,Bacillariophyta,False
+64,65,39074,Zostera marina,Magnoliophyta,False
+65,66,43781,Sarcomastigophora,Sarcomastigophora,False
+66,67,44030,Foraminiferida,Protozoa,False
+67,68,46088,Radiolaria,Protozoa,False
+68,69,46211,Ciliophora,Ciliophora,False
+69,70,47771,Haliclona,Porifera,False
+70,71,48005,Ophlitaspongia,Porifera,False
+71,72,48396,Halichondria panicea,Porifera,False
+72,73,48739,Hydrozoa,Cnidaria,False
+73,74,52551,Anthopleura,Cnidaria,False
+74,75,52562,Epiactis,Cnidaria,False
+75,76,52569,Urticina,Cnidaria,False
+76,77,52737,Metridium senile,Cnidaria,False
+77,78,557227,Enteroctopus dofleini,Mollusca,False
+78,79,566908,Pharidae,Mollusca,False
+79,80,567816,Lottia digitalis,Mollusca,False
+80,81,567823,Lottia pelta,Mollusca,False
+81,82,568350,Lottia persona,Mollusca,False
+82,83,568351,Lottia scutum,Mollusca,False
+83,84,57443,Lineidae,Nemertea,False
+84,85,57493,Emplectonematidae,Nemertea,False
+85,86,57522,Amphiporidae,Nemertea,False
+86,87,601,Cyanophycota,Cyanophycota,False
+87,88,64397,Polynoidae,Annelida,False
+88,89,6501,Ulvaceae,Chlorophyta,False
+89,90,656266,Balanus nubilus,Arthropoda,False
+90,91,65870,Nereididae,Annelida,False
+91,92,66101,Glyceridae,Annelida,False
+92,93,66335,Lumbrineridae,Annelida,False
+93,94,6720,Acrosiphoniaceae,Chlorophyta,False
+94,95,67224,Flabelligeridae,Annelida,False
+95,96,6746,Cladophoraceae,Chlorophyta,False
+96,97,67899,Terebellidae,Annelida,False
+97,98,68076,Sabellidae,Annelida,False
+98,99,6895,Codiaceae,Chlorophyta,False
+99,100,69662,Acmaea mitra,Mollusca,False
+100,101,69794,Trochidae,Mollusca,False
+101,102,70370,Lacuna,Mollusca,False
+102,103,70395,Littorina,Mollusca,False
+103,104,72023,Cerithiopsis,Mollusca,False
+104,105,72600,Trichotropis cancellata,Mollusca,False
+105,106,72711,Velutina,Mollusca,False
+106,107,72878,Naticidae,Mollusca,False
+107,108,73017,Fusitriton,Mollusca,False
+108,109,73293,Nucella canaliculata,Mollusca,False
+109,110,73294,Nucella lamellosa,Mollusca,False
+110,111,73296,Nucella lima,Mollusca,False
+111,112,73727,Buccinum,Mollusca,False
+112,113,76444,Siphonaria thersites,Mollusca,False
+113,114,78188,Diaulula sandiegensis,Mollusca,False
+114,115,78211,Rostanga pulchra,Mollusca,False
+115,116,78213,Archidoris montereyensis,Mollusca,False
+116,117,78215,Archidoris odhneri,Mollusca,False
+117,118,78332,Triopha catalinae,Mollusca,False
+118,119,78699,Hermissenda crassicornis,Mollusca,False
+119,120,78728,Aeolidia papillosa,Mollusca,False
+120,121,78761,Onchidella,Mollusca,False
+121,122,78819,Leptochiton rugatus,Mollusca,False
+122,123,78897,Tonicella,Mollusca,False
+123,124,78979,Katharina tunicata,Mollusca,False
+124,125,78980,Mopalia,Mollusca,False
+125,126,79032,Cryptochiton stelleri,Mollusca,False
+126,127,79452,Mytilus,Mollusca,False
+127,128,79500,Modiolus,Mollusca,False
+128,129,79791,Pododesmus,Mollusca,False
+129,130,80866,Clinocardium,Mollusca,False
+130,131,80954,Tresus,Mollusca,False
+131,132,80982,Mactromeris,Mollusca,False
+132,133,81033,Macoma,Mollusca,False
+133,134,81446,Saxidomus,Mollusca,False
+134,135,81464,Protothaca staminea,Mollusca,False
+135,136,81760,Hiatellidae,Mollusca,False
+136,137,81910,Entodesma,Mollusca,False
+137,138,82770,Prostigmata,Arthropoda,False
+138,139,83545,Pycnogonida,Arthropoda,False
+139,140,84195,Ostracoda,Arthropoda,False
+140,141,86329,Harpacticidae,Arthropoda,False
+141,142,89592,Chthamalus dalli,Arthropoda,False
+142,143,89606,Balanus crenatus,Arthropoda,False
+143,144,89609,Balanus glandula,Arthropoda,False
+144,145,89687,Semibalanus balanoides,Arthropoda,False
+145,146,89688,Semibalanus cariosus,Arthropoda,False
+146,147,92283,Sphaeromatidae,Arthropoda,False
+147,148,92426,Limnoria,Arthropoda,False
+148,149,92564,Idoteidae,Arthropoda,False
+149,150,93295,Gammaridea,Arthropoda,False
+150,151,9512,Prasinophyta,Prasinophyta,False
+151,152,95375,Caprellidae,Arthropoda,False
+152,153,95500,Euphausiidae,Arthropoda,False
+153,154,96746,Hippolytidae,Arthropoda,False
+154,155,97106,Crangonidae,Arthropoda,False
+155,156,97774,Paguridae,Arthropoda,False
+156,157,98432,Mimulus,Arthropoda,False
+157,158,98435,Pugettia,Arthropoda,False
+158,159,98449,Scyra,Arthropoda,False
+159,160,98663,Telmessus cheiragonus,Arthropoda,False
+160,161,98671,Cancer,Arthropoda,False
+161,162,9874,Dinophyceae,Pyrrophycophyta,False
+162,163,san12,Mastocarpus,Rhodophyta,False
+163,164,san14,Mazzaella,Rhodophyta,False
+164,165,san21,Neorhodomela,Rhodophyta,False
+165,166,san252,Phaeophyta Crust,Phaeophyta,False
+166,167,san262,Crustose coralline algae complex,Rhodophyta,False
+167,168,san266,Detritus complex,NA,False
+168,169,san272,Biofilm Complex,NA,False
+169,170,san338,Red crust complex,Rhodophyta,False
+170,171,san339,Chlorophyta Crust,Chlorophyta,False
+171,172,174468,Gavia,Chordata,False
+172,173,174478,Podiceps,Chordata,False
+173,174,174513,Diomedeidae,Chordata,False
+174,175,174536,Fulmarus glacialis,Chordata,False
+175,176,174554,Puffinus tenuirostris,Chordata,False
+176,177,174624,Oceanodroma,Chordata,False
+177,178,174717,Phalacrocorax auritus,Chordata,False
+178,179,174725,Phalacrocorax pelagicus,Chordata,False
+179,180,174987,Cygnus columbianus,Chordata,False
+180,181,174999,Branta canadensis,Chordata,False
+181,182,175011,Branta bernicla,Chordata,False
+182,183,175042,Chen canagica,Chordata,False
+183,184,175062,Anas,Chordata,False
+184,185,175130,Aythya marila,Chordata,False
+185,186,175140,Bucephala,Chordata,False
+186,187,175147,Clangula hyemalis,Chordata,False
+187,188,175149,Histrionicus histrionicus,Chordata,False
+188,189,175153,Polysticta stelleri,Chordata,False
+189,190,175155,Somateria mollissima,Chordata,False
+190,191,175160,Somateria spectabilis,Chordata,False
+191,192,175163,Melanitta fusca,Chordata,False
+192,193,175170,Melanitta perspicillata,Chordata,False
+193,194,175171,Melanitta nigra,Chordata,False
+194,195,175184,Mergus,Chordata,False
+195,196,175373,Buteo lagopus,Chordata,False
+196,197,175407,Aquila chrysaetos,Chordata,False
+197,198,175420,Haliaeetus leucocephalus,Chordata,False
+198,199,175599,Falco rusticolus,Chordata,False
+199,200,175604,Falco peregrinus,Chordata,False
+200,201,176177,Grus canadensis,Chordata,False
+201,202,176475,Haematopus bachmani,Chordata,False
+202,203,176506,Charadrius semipalmatus,Chordata,False
+203,204,176614,Tringa melanoleuca,Chordata,False
+204,205,176630,Tringa incana,Chordata,False
+205,206,176641,Calidris,Chordata,False
+206,207,176687,Limosa lapponica,Chordata,False
+207,208,176698,Gallinago,Chordata,False
+208,209,176735,Phalaropus lobatus,Chordata,False
+209,210,176793,Stercorarius parasiticus,Chordata,False
+210,211,176808,Larus hyperboreus,Chordata,False
+211,212,176814,Larus glaucescens,Chordata,False
+212,213,176824,Larus argentatus,Chordata,False
+213,214,176832,Larus canus,Chordata,False
+214,215,176875,Rissa tridactyla,Chordata,False
+215,216,176885,Sterna,Chordata,False
+216,217,176974,Uria aalge,Chordata,False
+217,218,176978,Uria lomvia,Chordata,False
+218,219,176991,Cepphus columba,Chordata,False
+219,220,176996,Brachyramphus marmoratus,Chordata,False
+220,221,177008,Synthliboramphus antiquus,Chordata,False
+221,222,177013,Ptychoramphus aleuticus,Chordata,False
+222,223,177019,Aethia cristatella,Chordata,False
+223,224,177029,Fratercula corniculata,Chordata,False
+224,225,177032,Fratercula cirrhata,Chordata,False
+225,226,177935,Asio flammeus,Chordata,False
+226,227,178511,Lanius excubitor,Chordata,False
+227,228,179492,Melospiza melodia,Chordata,False
+228,229,179526,Calcarius lapponicus,Chordata,False
+229,230,179531,Plectrophenax,Chordata,False
+230,231,179725,Corvus corax,Chordata,False
+231,232,554029,Aethia psittacula,Chordata,False
+232,233,554127,Anthus rubescens,Chordata,False
+233,234,686683,Bubo scandiacus,Chordata,False
+234,235,78536,Cinclus mexicanus,Mollusca,False

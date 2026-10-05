@@ -1,0 +1,34 @@
+Raw graph
+---------
+Graph type: DiGraph
+Nodes: 235
+Directed edges: 1804
+Self-loops: 47
+Reciprocal pairs: 14
+
+Undirected analysis graph
+-------------------------
+Nodes: 235
+Edges: 1743
+Connected components: 1
+Isolated nodes: 0
+Density: 0.06339334
+Minimum degree: 1
+Mean degree: 14.8340
+Median degree: 11.0000
+Maximum degree: 93
+Human degree: 70
+
+Metadata
+--------
+Unique phyla: 28
+Missing name: 0
+Missing TSN: 0
+Missing phylum: 0
+Human node ID: 56
+
+RQ labels on observed undirected edges
+---------------------------------------
+Same-phylum edges: 457
+Cross-phylum edges: 1286
+Human-related edges: 70
