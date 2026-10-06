@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+networkx
+scikit-learn
+matplotlib
+pytest
+plotly
+dash
