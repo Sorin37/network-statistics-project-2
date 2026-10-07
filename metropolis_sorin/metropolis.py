@@ -114,12 +114,14 @@ def sample_different_groupings(A, initial_weight, initial_grouping, number_of_gr
 
     Returns
     -------
-    accepted_groupings : a list of groupings (which are lists with int entries from 0 to K-1);
-        Gives the accepted groupings configurations.
+    accepted_groupings : a list of groupings (which are lists with int entries from 0 to number_of_groups - 1)
+    accepted_groupings_weight : their corresponding weight
+
     """
     weight = initial_weight
     old_grouping = initial_grouping.copy()
     accepted_groupings = [initial_grouping.copy()]
+    accepted_groupings_weights = [initial_weight]
     weight_history = []
     accepted_steps = []
     accepted_weights = []
@@ -156,6 +158,7 @@ def sample_different_groupings(A, initial_weight, initial_grouping, number_of_gr
             # lower NMI is better so the groupings are more different
             if max_nmi < nmi_threshold:
                 accepted_groupings.append(new_grouping)
+                accepted_groupings_weights.append(new_weight)
                 weight = new_weight
                 old_grouping = new_grouping.copy()
                 accepted_steps.append(step)
@@ -173,7 +176,7 @@ def sample_different_groupings(A, initial_weight, initial_grouping, number_of_gr
         accepted_steps, accepted_weights, accepted_nmis,
         rejected_steps, rejected_weights, rejected_nmis
     )
-    return accepted_groupings
+    return accepted_groupings, accepted_groupings_weights
 
 
 def plot_sample_history(weight_history, accepted_steps, accepted_weights, accepted_nmis,

@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     weight, groupings = initial_convergence(nx.to_numpy_array(G), number_of_groups, 100)
 
-    accepted_groupings = sample_different_groupings(
+    accepted_groupings, accepted_groupings_weights = sample_different_groupings(
         nx.to_numpy_array(G),
         weight,
         groupings,
