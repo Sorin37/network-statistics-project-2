@@ -1,4 +1,3 @@
-
 """
 Run SBM link reliability analysis.
 
@@ -44,11 +43,11 @@ from reliability_score.Link_reliability import (
 # True: update names in existing CSV without Metropolis.
 # False: run the full reliability calculation.
 UPDATE_NAMES_ONLY = False
-NUMBER_OF_GROUPS = 3
-INITIAL_STEPS = 100
-METROPOLIS_STEPS = 100000
-NMI_THRESHOLD = 0.7
-NUMBER_OF_CHANGES = 20
+NUMBER_OF_GROUPS = 16
+INITIAL_STEPS = 3000
+METROPOLIS_STEPS = 300000
+NMI_THRESHOLD = 0.95
+NUMBER_OF_CHANGES = 1
 
 
 def main():

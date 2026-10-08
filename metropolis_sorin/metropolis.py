@@ -88,7 +88,8 @@ def plot_weight_history(f_history):
 def sample_different_groupings(A, initial_weight, initial_grouping, number_of_groups, steps=1000, nmi_threshold=0.5, number_of_changes=1):
     """
     Generates grouping of the given graph depicted by the adjacency matrix A, taking the initialF and initialP from the convergence step
-    Makes sure that the generated groupings are different by rejecting changes that are similar to the already accepted groupings
+    A change is accepted or rejected using only the weight, so the chain always moves when the weight test passes (slide 29).
+    Makes sure that the kept groupings are different by only keeping a grouping that is different enough from the last kept one
     Will stop after the steps are achieved.
     Also plots the history to plots/sample_history.html.
 
@@ -105,8 +106,8 @@ def sample_different_groupings(A, initial_weight, initial_grouping, number_of_gr
     steps : int, optional;
         The number of random changes the algorithm does before stopping. The default is 1000.
     nmi_threshold : float, optional;
-        Threshold that accepts or rejects a new grouping, when compared with the NMI (normal mutual information)
-        of the already accepted groupings (measures correlation of groupings).
+        Threshold that keeps or skips a new grouping, when compared with the NMI (normal mutual information)
+        of the last kept grouping (measures correlation of groupings). It does not affect whether the chain moves.
         The default is 0.5.
     number_of_changes: int, optional;
         The number of nodes that are given a random grouping
@@ -142,25 +143,25 @@ def sample_different_groupings(A, initial_weight, initial_grouping, number_of_gr
         # Compute the weight
         new_weight = log_weight(A, new_grouping, number_of_groups)
 
-        # Decide whether to keep the new grouping
+        # Decide whether to move to the new grouping, using only the weight
         log_alpha = new_weight - weight
         if log_alpha >= 0 or np.log(np.random.rand()) < log_alpha:
-            # Max NMI across already accepted groupings
-            max_nmi = 0.0
-            for accepted_grouping in accepted_groupings:
-                nmi = normalized_mutual_info_score(
-                    accepted_grouping,
-                    new_grouping
-                )
-                max_nmi = max(max_nmi, nmi)
+            # the move happens as soon as the weight test passes,
+            # so the next iteration will begin with the new grouping
+            weight = new_weight
+            old_grouping = new_grouping.copy()
 
-            # change is accepted so the next iteration will begin with the new grouping
-            # lower NMI is better so the groupings are more different
+            # NMI with the last kept grouping
+            max_nmi = normalized_mutual_info_score(
+                accepted_groupings[-1],
+                new_grouping
+            )
+
+            # the NMI only decides whether this grouping is kept as a sample
+            # lower NMI is better so the kept groupings are more different
             if max_nmi < nmi_threshold:
                 accepted_groupings.append(new_grouping)
                 accepted_groupings_weights.append(new_weight)
-                weight = new_weight
-                old_grouping = new_grouping.copy()
                 accepted_steps.append(step)
                 accepted_weights.append(weight)
                 accepted_nmis.append(max_nmi)
@@ -231,7 +232,7 @@ def plot_sample_history(weight_history, accepted_steps, accepted_weights, accept
         y=rejected_weights,
         customdata=rejected_nmis,
         mode="markers",
-        name="rejected by NMI",
+        name="moved, not kept (too similar)",
         marker=dict(color="red", size=8, symbol="triangle-down"),
         hovertemplate="step=%{x}<br>weight=%{y:.4f}<br>max NMI=%{customdata:.4f}<extra></extra>"
     ))
