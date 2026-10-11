@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 from tqdm import tqdm
 from sklearn.metrics import normalized_mutual_info_score
 
-def initial_convergence(adjacency_matrix, number_of_groups=10, steps=1000):
+def initial_convergence(adjacency_matrix, number_of_groups=10, steps=1000, show_progress=True):
     """
     Performs initial convergence of the weight in the Metropolis algorithm.
     Also plots the history to plots/initial_convergence_history.html.
@@ -27,6 +27,8 @@ def initial_convergence(adjacency_matrix, number_of_groups=10, steps=1000):
         The number of communities we assume. The default is 100.
     steps : int, optional;
         The number of iterative steps taken to converge the weight. The default is 1000.
+    show_progress : bool, optional;
+        Whether to show the tqdm progress bar while converging. The default is True.
 
     Returns
     -------
@@ -41,7 +43,7 @@ def initial_convergence(adjacency_matrix, number_of_groups=10, steps=1000):
     weight = - 10 ** 10
     old_grouping = np.random.choice(number_of_groups, adjacency_matrix.shape[0])
     weight_history = [weight]
-    for step in tqdm(range(steps), desc="Initial convergence"):
+    for step in tqdm(range(steps), desc="Initial convergence", disable=not show_progress):
         fail = True
         while fail:
             # Create new P
@@ -82,7 +84,16 @@ def plot_weight_history(f_history):
     )
 
     os.makedirs("plots", exist_ok=True)
-    fig.write_html(os.path.join("plots", "convergence_weight_history.html"))
+    fig.write_html(os.path.join("plots", "convergence_weight_history.html"),
+    config={
+        'toImageButtonOptions': {
+            'format': 'svg',
+            'filename': 'custom_image',
+            'height': 500,
+            'width': 700,
+            'scale': 1
+        }
+    })
 
 
 def sample_different_groupings(A, initial_weight, initial_grouping, number_of_groups, steps=1000, nmi_threshold=0.5, number_of_changes=1):
@@ -244,4 +255,13 @@ def plot_sample_history(weight_history, accepted_steps, accepted_weights, accept
     )
 
     os.makedirs("plots", exist_ok=True)
-    fig.write_html(os.path.join("plots", "sample_history.html"))
+    fig.write_html(os.path.join("plots", "sample_history.html"),
+    config={
+        'toImageButtonOptions': {
+            'format': 'svg',
+            'filename': 'custom_image',
+            'height': 500,
+            'width': 700,
+            'scale': 1
+        }
+    })

@@ -48,7 +48,7 @@ from reliability_score.Link_reliability import (
 # Configuration
 # --------------------------------------------------
 
-NUMBER_OF_GROUPS = 16
+NUMBER_OF_GROUPS = 24
 INITIAL_STEPS = 3000
 METROPOLIS_STEPS = 300000
 NMI_THRESHOLD = 0.95

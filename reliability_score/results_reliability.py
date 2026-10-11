@@ -43,7 +43,7 @@ from reliability_score.Link_reliability import (
 # True: update names in existing CSV without Metropolis.
 # False: run the full reliability calculation.
 UPDATE_NAMES_ONLY = False
-NUMBER_OF_GROUPS = 16
+NUMBER_OF_GROUPS = 24
 INITIAL_STEPS = 3000
 METROPOLIS_STEPS = 300000
 NMI_THRESHOLD = 0.95
